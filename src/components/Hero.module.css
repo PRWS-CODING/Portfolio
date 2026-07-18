@@ -31,19 +31,6 @@
   margin-bottom: 32px;
 }
 
-/* This is the empty stage for your Sketchfab embed */
-.modelContainer {
-  flex: 1;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px dashed rgba(167, 139, 250, 0.3);
-  border-radius: 16px;
-  backdrop-filter: blur(4px);
-}
-
 /* Mobile stacking */
 @media (max-width: 900px) {
   .heroSection {
@@ -107,21 +94,17 @@
   filter: invert(1) opacity(1);
 }
 
-/* The box that holds the dragon */
+/* The box that holds the dragon model or fallback */
 .modelContainer {
   flex: 1; /* Makes it take up the right half of the screen */
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Glass border and background */
   background: rgba(255, 255, 255, 0.03);
   border: 1px dashed rgba(167, 139, 250, 0.3);
   border-radius: 16px;
   backdrop-filter: blur(4px);
-
-  /* This keeps the 3D model from poking outside the rounded corners */
   overflow: hidden;
 }
 

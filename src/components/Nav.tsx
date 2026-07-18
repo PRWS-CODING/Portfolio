@@ -10,11 +10,11 @@ function Nav() {
       href: "/Resume.pdf", // Looks in the public folder, just like your logo
       target: "_blank", // Opens the resume in a new tab
     },
-    // {
-    //   label: 'Projects',
-    //   href: '#projects',   // Scrolls down to the projects section
-    //   target: '_self'      // Stays on the same page
-    // },
+    {
+      label: 'Projects',
+      href: '#projects',   // Scrolls down to the projects section
+      target: '_self'      // Stays on the same page
+    },
     {
       label: "Contact",
       href: "mailto:prwscodingwsc@gmail.com", // Replace with your real email!
