@@ -1,0 +1,160 @@
+/* src/components/Hero/Hero.module.css */
+.heroSection {
+  /* Take up the full screen minus the nav bar */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10% 0 10%; /* Top padding pushes it below the fixed nav */
+  gap: 40px;
+}
+
+.textContainer {
+  flex: 1;
+  max-width: 600px;
+}
+
+.headline {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  background: linear-gradient(to right, #ffffff, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subheadline {
+  font-size: 1.25rem;
+  color: #c4b5fd;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* This is the empty stage for your Sketchfab embed */
+.modelContainer {
+  flex: 1;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(167, 139, 250, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+}
+
+/* Mobile stacking */
+@media (max-width: 900px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  .headline {
+    font-size: 3rem;
+  }
+}
+
+/* Add this to the bottom of src/components/Hero/Hero.module.css */
+
+.techStack {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.techTitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a78bfa;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.iconGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.techIcon {
+  height: 36px;
+  width: auto;
+  transition: all 0.3s ease;
+  /* Grayscale and slightly faded by default */
+  opacity: 0.5;
+  filter: grayscale(100%);
+  cursor: crosshair; /* A little sci-fi touch */
+}
+
+.techIcon:hover {
+  /* Full color and floats up on hover */
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateY(-5px);
+}
+
+/* Specific fix for logos that are solid black (GitHub/Vercel) so they show up on your dark background */
+.invertOnDark {
+  filter: invert(1) opacity(0.5);
+}
+
+.techIcon.invertOnDark:hover {
+  filter: invert(1) opacity(1);
+}
+
+/* The box that holds the dragon */
+.modelContainer {
+  flex: 1; /* Makes it take up the right half of the screen */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Glass border and background */
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(167, 139, 250, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+
+  /* This keeps the 3D model from poking outside the rounded corners */
+  overflow: hidden;
+}
+
+/* The actual 3D iframe */
+.sketchfabEmbed {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+/* Fallback for when WebGL is not supported */
+.fallbackContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.fallbackImage {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.fallbackText {
+  margin-top: 16px;
+  color: #a78bfa;
+  font-size: 0.9rem;
+  text-align: center;
+}
