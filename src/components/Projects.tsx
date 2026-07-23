@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Projects.module.css';
 
 export default function Projects() {
@@ -40,7 +39,7 @@ export default function Projects() {
   return (
     <section className={styles.projectsSection} id="projects">
       <h1 className={styles.sectionTitle}>
-        Here are some of my <span class={styles.blueText}>projects.</span>
+        Here are some of my <span className={styles.blueText}>projects.</span>
       </h1>
       
       <ul className={styles.projectList}>

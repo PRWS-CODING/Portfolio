@@ -3,6 +3,12 @@ h1 {
   color: #a78bfa;
 }
 
+.title {
+  background: linear-gradient(90deg, #a78bfa, #00eeff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .glassNav {
   --bgColor: rgba(255, 255, 255, 0.15);
   --highlight: rgba(255, 255, 255, 0.4);
