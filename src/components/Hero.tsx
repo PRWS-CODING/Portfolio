@@ -30,6 +30,7 @@ function Hero() {
     { name: "Firebase", url: "/Firebase.png" },
     { name: "Supabase", url: "/supabase.png" },
     { name: "Vercel", url: "/vercel.png", invert: true },
+    { name: "Linux", url: "/Linux.png" },
   ];
 
   const [hasWebGL, setHasWebGL] = useState(true);

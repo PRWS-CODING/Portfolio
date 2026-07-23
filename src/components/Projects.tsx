@@ -8,24 +8,32 @@ export default function Projects() {
       subtitle: "React, Firebase, Vercel, CSS Modules",
       description: "A comprehensive logistics application built to monitor real-time trailer metrics and fuel data directly on the yard.",
       imgSrc: "yardwalk.png", // Swap with your assets
-      liveLink: "#",
-      githubLink: "#"
+      liveLink: "https://yard-walk-2-0.vercel.app/",
+      githubLink: "https://github.com/PRWS-CODING/YardWalk-2.0"
     },
     {
         title: "Trailer Fuel app",
         subtitle: "React, Native CSS, Vite",
         description: "A dedicated fleet management tool designed to track trailer operations, operational hours, and critical fuel metrics. Streamlines field auditing workflows with a highly responsive utility card interface and direct data recording.",
         imgSrc: "trailerfuel.png",
-        liveLink: "#",
-        githubLink: "#"
+        liveLink: "https://trailer-fuel.vercel.app/",
+        githubLink: "https://github.com/PRWS-CODING/Trailer-Fuel"
+    },
+    {
+      title: "Digital Event Invitation",
+      subtitle: "HTML, CSS, JS",
+      description: "A custom, responsive wedding invitation web application built with HTML,CSS and JS. Built from scratch to deliver an interactive guest experience with custom event details, elegant mobile-first card layouts, and dynamic UI components.",
+      imgSrc: "Wedding-invite.png",
+      liveLink: "https://prws-coding.github.io/Wedding-invite/",
+      githubLink: "https://github.com/PRWS-CODING/Wedding-invite"
     },
     {
       title: "Netflix Clone",
       subtitle: "React, Firebase Auth, MongoDB, CSS",
       description: "A media streaming dashboard featuring robust routing configurations, live credential validation, and dynamic grids.",
       imgSrc: "netflixclone.png",
-      liveLink: "#",
-      githubLink: "#"
+      liveLink: "https://netflix-clone-iota-two-39.vercel.app/",
+      githubLink: "https://github.com/PRWS-CODING/Netflix-clone"
     }
   ];
 

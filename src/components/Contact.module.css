@@ -105,3 +105,20 @@
 .submitBtn:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 480px) {
+  .formContainer {
+    right: 16px;
+    left: 16px;
+    width: auto; /* Stretches to fit the screen width minus margin */
+    bottom: 90px;
+  }
+
+  .toggleButton {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}

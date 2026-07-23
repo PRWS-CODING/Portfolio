@@ -140,3 +140,37 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .projectWrapper {
+    /* Switch to a taller aspect ratio on mobile so overlay text fits comfortably */
+    aspect-ratio: 4 / 3;
+  }
+
+  .projectDescription {
+    padding: 0 20px;
+  }
+
+  .descriptionTitle {
+    font-size: 1.3rem;
+  }
+
+  .descriptionSubTitle {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .descriptionPara {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  /* Make hover description visible by default on touch screens if needed */
+  /* Or keep hover active — touch devices trigger hover on tap */
+}

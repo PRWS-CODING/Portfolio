@@ -141,3 +141,36 @@
   font-size: 0.9rem;
   text-align: center;
 }
+
+@media (max-width: 900px) {
+  /* Stack 3D Canvas and text vertically if they are side-by-side */
+  .heroLayout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .canvasContainer {
+    height: 300px; /* Reduce 3D model height on tablets */
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 2rem; /* Scale down hero text for phone screens */
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .canvasContainer {
+    height: 250px; /* Compact 3D box for phones */
+  }
+
+  /* Force tech stack grid into 4 columns on phones instead of 6/12 */
+  .techGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+}

@@ -51,6 +51,7 @@ function Nav() {
               className={styles.logoImage}
             ></img>
           </a>
+          <h1>PRWS Coding</h1>
 
           {/* Links Section */}
           <ul className={styles.navList}>
