@@ -17,19 +17,19 @@ function getWebGLSupport() {
 
 function Hero() {
   const techIcons = [
-    { name: "HTML5", url: "/html.png" },
-    { name: "CSS3", url: "/css-3.png" },
-    { name: "JavaScript", url: "/js.png" },
+    { name: "HTML5", url: "/HTML-5.png" },
+    { name: "CSS3", url: "/CSS-3.png" },
+    { name: "JavaScript", url: "/JavaScript.png" },
     { name: "TypeScript", url: "/TypeScript.png" },
-    { name: "React", url: "/atom.png" },
+    { name: "React", url: "/Atom.png" },
     { name: "Vite", url: "/Vite.js.png" },
     { name: "Git", url: "/Git.png" },
     // If your GitHub and Vercel PNGs are solid black, leave invert: true here
     // so the CSS flips them to white. If they are already white, delete that part!
     { name: "GitHub", url: "/GitHub.png", invert: true },
     { name: "Firebase", url: "/Firebase.png" },
-    { name: "Supabase", url: "/supabase.png" },
-    { name: "Vercel", url: "/vercel.png", invert: true },
+    { name: "Supabase", url: "/Supabase.png" },
+    { name: "Vercel", url: "/Vercel.png", invert: true },
     { name: "Linux", url: "/Linux.png" },
   ];
 
@@ -43,26 +43,17 @@ function Hero() {
     <section id="home" className={styles.heroSection}>
       <div className={styles.textContainer}>
         <h1 className={styles.headline}>
-          Building the Future,
-          <br />
-          Line by Line.
-        </h1>
-        <p className={styles.subheadline}>
-          {/* Engineering Structure Out of Chaos.
-            With 20 years of experience navigating complex logistics and a foundation built on military discipline, I don't just write code—I engineer solutions. I specialize in React, TypeScript, and clean, native CSS architecture to build responsive, data-driven applications that solve real-world problems. */}
-          Front-End Web Developer & Operations Specialist A disciplined
-          front-end developer transitioning from a 20-year career in the
-          logistics industry. Armed with a military-structured approach to
-          problem-solving, I specialize in building scalable web applications
-          using React, JavaScript/TypeScript, and native CSS Modules. Proven
-          ability to translate complex operational bottlenecks into streamlined
-          digital solutions, demonstrated by architecting custom real-time
-          trailer tracking systems (YardWalk 2.0) and fuel management
-          interfaces. I thrive on creating clean, highly customized UI
-          architectures without relying on bloated utility frameworks, bringing
-          a no-nonsense, results-oriented mindset to modern web development.
-          {/* "For the last 20 years, I've managed the chaos of the logistics industry. Now, I'm using that same military-level structure and operational insight to build the digital tools that industries actually need. I focus on React, Firebase, and TypeScript, and I take pride in writing clean, native CSS rather than leaning on shortcuts. Whether I'm building a real-time trailer tracking application like YardWalk 2.0, developing fuel-tracking dashboards, or designing responsive landing pages, my goal is always the same: take a complex problem, strip away the noise, and build a structured, scalable solution." */}
-        </p>
+ Front-End Developer <br />
+    <span className={styles.subTitleSpan}>20 years in logistics</span>
+</h1>
+
+<p className={styles.subheadline}>
+    I build the tools I used to wish existed: trailer tracking, fuel dashboards, and ops interfaces.
+  </p>
+
+  <p className={styles.heroTechList}>
+    React · TypeScript · Firebase · Native CSS
+  </p>
         <div className={styles.techStack}>
           <h3 className={styles.techTitle}>Core Arsenal</h3>
           <div className={styles.iconGrid}>
@@ -86,7 +77,7 @@ function Hero() {
         ) : (
           <div className={styles.fallbackContainer}>
             <img
-              src="/dragon-placeholder.png"
+              src="/BlueDragon.png"
               alt="Dragon"
               className={styles.fallbackImage}
             />

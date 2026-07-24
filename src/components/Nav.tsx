@@ -11,9 +11,9 @@ function Nav() {
       target: "_blank", // Opens the resume in a new tab
     },
     {
-      label: 'Projects',
-      href: '#projects',   // Scrolls down to the projects section
-      target: '_self'      // Stays on the same page
+      label: "Projects",
+      href: "#projects", // Scrolls down to the projects section
+      target: "_self", // Stays on the same page
     },
     {
       label: "Contact",
@@ -51,7 +51,9 @@ function Nav() {
               className={styles.logoImage}
             ></img>
           </a>
-          <h1 className={styles.title}>PRWS Coding</h1>
+          <h1 className={styles.title}>
+            Paul Rosenbaum — Front-End Developer
+          </h1>
 
           {/* Links Section */}
           <ul className={styles.navList}>
