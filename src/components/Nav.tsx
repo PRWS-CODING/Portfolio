@@ -51,11 +51,8 @@ function Nav() {
               className={styles.logoImage}
             ></img>
           </a>
-          <h1 className={styles.title}>
-            Paul Rosenbaum — Front-End Developer
-          </h1>
+          
 
-          {/* Links Section */}
           <ul className={styles.navList}>
             {menuItems.map((item) => (
               <li key={item.label}>
