@@ -1,4 +1,3 @@
-// src/components/Nav/Nav.tsx
 import { useState } from "react";
 import styles from "./Nav.module.css";
 
@@ -7,17 +6,17 @@ function Nav() {
   const menuItems = [
     {
       label: "About",
-      href: "/Resume.pdf", // Looks in the public folder, just like your logo
-      target: "_blank", // Opens the resume in a new tab
+      href: "/Resume.pdf",
+      target: "_blank",
     },
     {
       label: "Projects",
-      href: "#projects", // Scrolls down to the projects section
-      target: "_self", // Stays on the same page
+      href: "#projects",
+      target: "_self",
     },
     {
       label: "Contact",
-      href: "mailto:prwscodingwsc@gmail.com", // Replace with your real email!
+      href: "mailto:prwscodingwsc@gmail.com",
       target: "_self",
     },
   ];
@@ -44,14 +43,15 @@ function Nav() {
         <div className={styles.glassSpecular}></div>
 
         <div className={styles.glassContent}>
-          <a href="mailto:prwscodingwsc@gmail.com" className={styles.logo}>
+          {/* GROUPED BRAND: Logo image & text sit inside one anchor tag */}
+          <a href="#hero" className={styles.brandGroup}>
             <img
               src="/My-Logo.svg"
-              alt="my logo"
+              alt="PRWS Logo"
               className={styles.logoImage}
-            ></img>
+            />
+            <h2 className={styles.logoText}>PRWS.Dev</h2>
           </a>
-          
 
           <ul className={styles.navList}>
             {menuItems.map((item) => (
