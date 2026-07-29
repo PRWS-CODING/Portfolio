@@ -43,8 +43,7 @@ function Nav() {
         <div className={styles.glassSpecular}></div>
 
         <div className={styles.glassContent}>
-          {/* GROUPED BRAND: Logo image & text sit inside one anchor tag */}
-          <a href="#hero" className={styles.brandGroup}>
+          <a href="#" className={styles.brandGroup}>
             <img
               src="/My-Logo.svg"
               alt="PRWS Logo"
