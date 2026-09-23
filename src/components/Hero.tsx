@@ -24,8 +24,6 @@ function Hero() {
     { name: "React", url: "/Atom.png" },
     { name: "Vite", url: "/Vite.js.png" },
     { name: "Git", url: "/Git.png" },
-    // If your GitHub and Vercel PNGs are solid black, leave invert: true here
-    // so the CSS flips them to white. If they are already white, delete that part!
     { name: "GitHub", url: "/GitHub.png", invert: true },
     { name: "Firebase", url: "/Firebase.png" },
     { name: "Supabase", url: "/Supabase.png" },
@@ -43,17 +41,18 @@ function Hero() {
     <section id="home" className={styles.heroSection}>
       <div className={styles.textContainer}>
         <h1 className={styles.headline}>
- Front-End Developer <br />
-    <span className={styles.subTitleSpan}>20 years in logistics</span>
-</h1>
+          Front-End Developer <br />
+          <span className={styles.subTitleSpan}>20 years in logistics</span>
+        </h1>
 
-<p className={styles.subheadline}>
-    I build the tools I used to wish existed: trailer tracking, fuel dashboards, and ops interfaces.
-  </p>
+        <p className={styles.subheadline}>
+          I build the tools I used to wish existed: trailer tracking, fuel
+          dashboards, and ops interfaces.
+        </p>
 
-  <p className={styles.heroTechList}>
-    React · TypeScript · Firebase · Native CSS
-  </p>
+        <p className={styles.heroTechList}>
+          React · TypeScript · Firebase · Native CSS
+        </p>
         <div className={styles.techStack}>
           <h3 className={styles.techTitle}>Core Arsenal</h3>
           <div className={styles.iconGrid}>

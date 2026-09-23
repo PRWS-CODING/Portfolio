@@ -1,27 +1,19 @@
-import { Suspense, useEffect } from "react"; // <-- Added useEffect
+import { Suspense, useEffect } from "react"; 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Stage } from "@react-three/drei";
-import * as THREE from "three"; // <-- Added THREE to handle colors
+import * as THREE from "three"; 
 
-// This function actually loads your downloaded file from the public folder
 function Model() {
   const { scene } = useGLTF("./dragon.glb");
 
-  // --- NEW COLOR OVERRIDE LOGIC ---
   useEffect(() => {
-    // This traverses every piece of the 3D model
     scene.traverse((child: any) => {
-      // If the piece is a physical shape with a material applied
       if (child.isMesh && child.material) {
-        
-        // Target the color and change it (using a purple hex here)
-        child.material.color = new THREE.Color("#a78bfa"); 
-        
-        // Make it slightly metallic so it catches the ambientLight you added
+        child.material.color = new THREE.Color("#a78bfa");
+
         child.material.roughness = 0.2;
         child.material.metalness = 0.8;
-        
-        // Tell the engine to apply the changes
+
         child.material.needsUpdate = true;
       }
     });
@@ -43,9 +35,7 @@ export default function DragonModel() {
       <ambientLight intensity={1.5} />
       <directionalLight position={[5, 5, 5]} intensity={2.5} />
 
-      <Suspense
-        fallback={null}
-      >
+      <Suspense fallback={null}>
         {/* Stage automatically centers your model and sets up great studio lighting */}
         <Stage environment={null} intensity={0.5}>
           <Model />

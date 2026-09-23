@@ -30,7 +30,6 @@ export default function Footer() {
             >
               LinkedIn
             </a>
-            {/* Optional: Add a link to your resume PDF in the public folder */}
             <a 
               href="/Resume.pdf" 
               target="_blank" 

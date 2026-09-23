@@ -16,7 +16,7 @@ function Nav() {
     },
     {
       label: "Contact",
-      href: "mailto:prwscodingwsc@gmail.com",
+      href: "mailto:paul.w.rosenbaum@gmail.com",
       target: "_self",
     },
   ];
